@@ -1,10 +1,5 @@
 import { useEffect, useState } from 'react';
-
-interface FetchState<T = any> {
-    data: T | null;
-    loading: boolean;
-    error: boolean;
-}
+import { FetchState } from '../types/FetchState';
 
 // Custom hook for fetching data using the FETCH Client API
 export const useFetch = <T = any>(URL: string, options: RequestInit = {}) => {
