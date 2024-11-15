@@ -1,9 +1,8 @@
 import express from 'express' ;
-
+import { ensTransfersById } from '../../Controller/ENS/ENSIDController';
 const router = express.Router();
-const ENSTransferController = require('../Controller/ENSTransferController');
 
 // ENS transfers by ID
-router.post("/ens-transfers-by-id", ENSTransferController.ensTransfersById);
+router.post("/ens-transfers-by-id", ensTransfersById);
 
 module.exports = router;
