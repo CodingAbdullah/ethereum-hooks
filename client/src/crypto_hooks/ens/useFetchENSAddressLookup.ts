@@ -1,7 +1,19 @@
 import axios from "axios";
 import { useFetch } from "../../custom_hooks/useFetch";
 
-// Convert ENS (.eth) Domain ---> ETH Address
-export const useFetchENSAddressLookup = () => {
+// Fetching ENS to Address Custom hook
+export const useFetchENSAddressLookup = (ensName: string) => {
+    const URL = 'http://localhost:5000/additional-address-to-ens-information'; // Define the API endpoint
+    
+    const options = {
+        method: 'POST',
+        body: JSON.stringify({ ensName }),
+        headers: {
+            'accept': 'application/json'
+        }
+    };
 
+    const state = useFetch(URL, options); // Use the custom hook to fetch data
+
+    return state; // Return the state from the custom hook
 }
