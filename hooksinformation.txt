@@ -1,0 +1,49 @@
+List of the 30 React Hooks
+
+Prices
+useFetchETHPrice ---> [Current, Duration]
+useFetchERC20Price ---> ERC20 Prices [Contract Address, Current, Duration]
+useFetchERC721Price ---> ERC721 Prices [Contract Address, Token ID, Current, Duration]
+useFetchLayerTwoPrice ---> [Blockchain, Current, Duration]
+
+-
+
+ERC20 Tokens
+useFetchERC20CollectionOwners ---> [Contract Address, Blockchain]
+useFetchERC20CollectionTopCoins ---> [Contract Address, Blockchain]
+useFetchERC20CollectionTransfers ---> [Contract Address, Blockchain]
+useFetchERC20Holdings ---> [Contract Address, Blockchain]
+useFetchERC20Transfers ---> [Contract Address, Blockchain]
+
+-
+
+ERC721 Tokens
+useFetchERC721CollectionAttributes [Contract Address, Blockchain]
+useFetchERC721CollectionData [Contract Address, Blockchain]
+useFetchERC721CollectionExtraData [Contract Address, Blockchain]
+useFetchERC721CollectionFloorPrice [Contract Address, Current, Duration, Blockchain]
+useFetchERC721CollectionMarketCap [Contract Address, Blockchain]
+useFetchERC721CollectionSales [Contract Address, Blockchain]
+useFetchERC721CollectionTransfers [Contract Address, Blockchain]
+useFetchERC721CollectionTrends [Contract Address, Blockchain]
+useFetchERC721CollectionVolume [Contract Address, Blockchain]
+useFetchERC721Holdings [Wallet Address, Blockchain]
+useFetchERC721LookupData [Contract Address, Token ID, Blockchain]
+useFetchERC721OpenseaData [Contract Address, Token ID, Blockchain]
+useFetchERC721RarityData [Contract Address, Token ID, Blockchain]
+useFetchERC721SalesData [Contract Address, Token ID, Blockchain]
+useFetchERC721TransferLookupData [Contract Address, Token ID, Blockchain]
+useFetchERC721Transfers [Wallet Address, Blockchain]
+
+-
+
+ENS
+useFetchAddressENSLookup
+useFetchENSAddressLookup
+useFetchENSIDLookup
+useFetchENSNameLookup
+
+-
+
+Gas
+useFetchGasLookup [ETH?/Layer Two?]
