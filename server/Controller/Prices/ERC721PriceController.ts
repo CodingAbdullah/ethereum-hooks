@@ -11,12 +11,12 @@ export const ERC721PriceController = (req: Request, res: Response) => {
         method: 'GET',
         headers: {
             'content-type': 'application/json',
-            'Authorization' : process.env.MORALIS_API_KEY
+            'X-API-KEY' : process.env.MORALIS_API_KEY
         }
     }
 
     // Conditionally making API calls for ERC721 Pricing
-    axios.get('https://deep-index.moralis.io/api/v2.2/nft/' + contractAddress + '/' + tokenID + '/floor-price', options)
+    axios.get('https://deep-index.moralis.io/api/v2.2/nft/' + contractAddress + '/' + tokenID + '/floor-price?chain=eth', options)
     .then(response => {
         res.status(200).json({
             information: response.data
