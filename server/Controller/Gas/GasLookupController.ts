@@ -1,4 +1,5 @@
 require('dotenv').config({ path: '../.env' });
+import { Request, Response } from "express";
 import axios from "axios";
 
 // Controller function for fetching Ethereum gas information
@@ -21,5 +22,5 @@ export const gasTrackInformation = (req: Request, res: Response) => {
     })
     .catch(() => {
         res.status(400).json({});
-    })
+    });
 }
