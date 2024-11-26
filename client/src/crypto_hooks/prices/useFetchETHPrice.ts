@@ -1,12 +1,12 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
-// Fetching Layer Two Prices Hook
-export const useFetchETHPrice = async (duration: 2 | 14 | 30) => {
+// Fetching ETH Prices Hook
+export const useFetchETHPrice = async (currentPrice: boolean, duration: 2 | 14 | 30) => {
 
     // Set options for request
     let options = {
         method: 'POST',
-        body: JSON.stringify({ duration }),
+        body: JSON.stringify({ currentPrice, duration }),
         headers : {
             'accept' : 'application/json'
         }
