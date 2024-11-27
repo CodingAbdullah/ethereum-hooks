@@ -1,12 +1,12 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC721 Lookup Data hook
-export const useFetchERC721LookupData = async (walletAddress: string, tokenID: string) => {
+export const useFetchERC721LookupData = async (contractAddress: string, tokenID: string) => {
     
     // Set options for request
     let options = {
         method: 'POST',
-        body: JSON.stringify({ walletAddress, tokenID }),
+        body: JSON.stringify({ contractAddress, tokenID }),
         headers : {
             'accept' : 'application/json'
         }
