@@ -13,7 +13,7 @@ export const useFetchERC721TransferLookupData = async (contractAddress: string, 
     }
 
     // Use the custom hook to fetch data
-    const state = useFetch('http://localhost:5000//erc721-token-transfer-lookup-data', options);
+    const state = useFetch('http://localhost:5000/erc721-token-transfer-lookup-data', options);
 
     // Return the state from the custom hook
     return state;
