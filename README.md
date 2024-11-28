@@ -14,7 +14,7 @@ When working with this package, you will need to implement the typical MERN desi
 
 <b>By default, it is assumed that the NODE server is running on PORT 5000. </b> The following diagram will be helpful in understanding the flow of how everything works:
 
-<img src="hook-server-design.png" alt="Hook Server" width="600" height="400" />
+<img src="hook-server-design.png" alt="Hook Server" style="height: 300px; width:500px;"/>
 
 <hr />
 
