@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
-// Fetching ERC20 Collection Transfers
-export const useFetchERC20CollectionTransfers = async (contractAddress: string) => {
+// Fetching ERC20 Collection Holdings
+export const useFetchERC20Holdings = async (contractAddress: string) => {
 
     // Set options for request
     let options = {
