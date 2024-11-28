@@ -9,8 +9,8 @@ export const ERC721LookupDataController = (req: Request, res: Response) => {
     const options = {
         method: 'GET',
         headers: {
-            'content-type': 'application/json',
             'accept' : 'application/json',
+            'content-type': 'application/json',
             'X-API-KEY' : process.env.MORALIS_API_KEY
         } 
     }

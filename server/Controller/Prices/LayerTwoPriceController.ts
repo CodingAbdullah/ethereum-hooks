@@ -10,8 +10,8 @@ export const layerTwoPriceController = (req: Request, res: Response) => {
     const options = {
         method: 'GET',
         headers: {
-            'content-type': 'application/json',
-            'Authorization' : process.env.COINGECKO_API_KEY
+            'accept': 'application/json',
+            'content-type': 'application/json'
         }
     }
 

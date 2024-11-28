@@ -13,9 +13,9 @@ export const ensTransfersById = (req: Request, res: Response) => {
 
     const options = {
         headers: {
-            'content-type': 'application/json',
             'accept' : 'application/json',
-            'X-API-KEY' : process.env.TRANSPOSE_API_KEY_1
+            'content-type': 'application/json',
+            'X-API-KEY' : process.env.TRANSPOSE_API_KEY
         } 
     }
 

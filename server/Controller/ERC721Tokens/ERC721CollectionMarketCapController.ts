@@ -11,7 +11,7 @@ export const ERC721CollectionMarketCapController = (req: Request, res: Response)
         method: 'GET',
         headers: {
             'accept': 'application/json',
-            'content-type': 'application/json',
+            'content-type': 'application/json'
         }
     }
 
