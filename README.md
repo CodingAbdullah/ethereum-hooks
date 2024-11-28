@@ -3,10 +3,11 @@ A package containing useful hooks for working with crypto APIs.
 
 The following resources will be referenced when building these hooks:
 - Alchemy
+- Blocknative
 - CoinGecko
-- Etherscan
-- Opensea
 - Moralis
+- Opensea
+- Transpose
 
 ## Sections
 
