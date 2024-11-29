@@ -1,5 +1,5 @@
-# crypto-api-hooks
-A package containing useful hooks for working with crypto APIs. The following resources will be referenced when building these hooks:
+# ethereum-api-hooks
+A package containing useful hooks for working with the Ethereum blockchain using crypto APIs. The following resources will be referenced when building these hooks:
 
 - Alchemy
 - Blocknative
@@ -8,7 +8,7 @@ A package containing useful hooks for working with crypto APIs. The following re
 - Opensea
 - Transpose
 
-<hr />
+<br />
 
 ## React Hooks Client-Server Setup
 When working with this package, you will need to implement the typical MERN design pattern. Set up <code>.env</code> variables and set up the server to allow the client hooks to establish communication.
@@ -26,12 +26,12 @@ The following diagram will help you understand the flow of how everything works:
 
 <img src="hook-server-design.png" alt="Hook Server" width="600" height="400" />
 
-<hr />
+<br />
 
 ## Link to Published NPM Package
 To be posted later
 
-<hr />
+<br />
 
 ## React Client Hooks
 
@@ -198,7 +198,7 @@ The following table highlights the 30 different client hooks:
     </tr>
 </table>
 
-<hr />
+<br />
 
 ## Custom Hooks
 Custom hooks were used for development convenience and were fully incorporated into the main client hooks. The following table depicts the custom hooks:
@@ -214,7 +214,7 @@ Custom hooks were used for development convenience and were fully incorporated i
     </tr>
 </table>
 
-<hr />
+<br />
 
 ## Types
 Custom data types were developed for fetch state and defining a set of available layer two networks 

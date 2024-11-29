@@ -12,9 +12,16 @@
     "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [
+    "api",
+    "blockchain",
+    "client",
     "crypto",
+    "ethereum",
+    "expressjs",
     "hooks",
-    "api"
+    "nodejs",
+    "reactjs",
+    "server"
   ],
   "author": "CodingAbdullah",
   "license": "MIT",
