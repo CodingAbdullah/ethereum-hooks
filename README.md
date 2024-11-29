@@ -13,7 +13,7 @@ A package containing useful hooks for working with crypto APIs. The following re
 ## React Hooks Client-Server Setup
 When working with this package, you will need to implement the typical MERN design pattern. Set up <code>.env</code> variables and set up the server to allow the client hooks to establish communication.
 
-<b>By default, it is assumed that the NODE server is running on PORT 5000. You will need to set the following API keys in your <code>.env</code> file: </b>
+<b>By default, it is assumed that the NODE server is running on PORT 5000. You will need to set the <code>PORT</code> and the following API keys in your <code>.env</code> file: </b>
 
 - <code>ALCHEMY_API_KEY</code>
 - <code>BLK_API_KEY</code>
@@ -33,7 +33,7 @@ To be posted later
 
 <hr />
 
-##  React Client Hooks
+## React Client Hooks
 
 The hooks cover several areas of the Ethereum blockchain and can be used for Layer Two chains as well.
 A list of what chains are supported is provided below in the <code>Types</code> section.
