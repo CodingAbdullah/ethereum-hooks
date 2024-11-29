@@ -1,12 +1,12 @@
 # ethereum-api-hooks
 A package containing useful hooks for working with the Ethereum blockchain using crypto APIs. The following resources will be referenced when building these hooks:
 
-- Alchemy
-- Blocknative
-- CoinGecko
-- Moralis
-- Opensea
-- Transpose
+- <a href="https://docs.alchemy.com/reference/api-overview">Alchemy</a>
+- <a href="https://docs.blocknative.com/">Blocknative</a>
+- <a href="https://docs.coingecko.com/v3.0.1/reference/introduction">CoinGecko</a>
+- <a href="https://docs.moralis.com/">Moralis</a>
+- <a href="https://docs.opensea.io/reference/api-overview">Opensea</a>
+- <a href="https://docs.transpose.io/">Transpose</a>
 
 <br />
 
@@ -29,7 +29,7 @@ The following diagram will help you understand the flow of how everything works:
 <br />
 
 ## Link to Published NPM Package
-To be posted later
+- <a href="https://www.npmjs.com/package/ethereum-hooks">Ethereum Hooks</a>
 
 <br />
 
