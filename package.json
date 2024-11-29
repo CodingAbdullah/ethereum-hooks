@@ -1,5 +1,29 @@
 {
+  "name": "ethereum-api-hooks",
+  "version": "1.0.0",
+  "description": "Package containing useful React hooks for working with the Ethereum Blockchain.",
+  "main": "server/server.ts",
+  "scripts": {
+    "start": "ts-node server/server.ts",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "cd client && npm install && cd ../server && npm install",
+    "build-server": "tsc -p server/tsconfig.json",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "crypto",
+    "hooks",
+    "api"
+  ],
+  "author": "CodingAbdullah",
+  "license": "MIT",
+  "private": false,
   "dependencies": {
-    "cors": "^2.8.5"
+    "ethereum-api-hooks": "file:"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.0",
+    "typescript": "^5.7.2"
   }
 }
