@@ -1,5 +1,6 @@
 # crypto-api-hooks
 A package containing useful hooks for working with crypto APIs. The following resources will be referenced when building these hooks:
+
 - Alchemy
 - Blocknative
 - CoinGecko
@@ -10,11 +11,20 @@ A package containing useful hooks for working with crypto APIs. The following re
 <hr />
 
 ## React Hooks Client-Server Setup
-When working with this package, you will need to implement the typical MERN design pattern. Setting up <code>.env</code> variables and setting up the server to allow client hooks to establish communication.
+When working with this package, you will need to implement the typical MERN design pattern. Set up <code>.env</code> variables and set up the server to allow the client hooks to establish communication.
 
-<b>By default, it is assumed that the NODE server is running on PORT 5000. </b> The following diagram will be helpful in understanding the flow of how everything works:
+<b>By default, it is assumed that the NODE server is running on PORT 5000. You will need to set the following API keys in your <code>.env</code> file: </b>
 
-<img src="hook-server-design.png" alt="Hook Server" style="height: 300px; width:500px;"/>
+- <code>ALCHEMY_API_KEY</code>
+- <code>BLK_API_KEY</code>
+- <code>COINGECKO_API_KEY</code>
+- <code>MORALIS_API_KEY</code>
+- <code>OPENSEA_API_KEY</code>
+- <code>TRANSPOSE_API_KEY</code>
+
+The following diagram will help you understand the flow of how everything works:
+
+<img src="hook-server-design.png" alt="Hook Server" width="600" height="400" />
 
 <hr />
 
@@ -26,141 +36,172 @@ To be posted later
 ##  React Client Hooks
 
 The hooks cover several areas of the Ethereum blockchain and can be used for Layer Two chains as well.
-A list of what chains are supported will be provided later (also supported by a custom data type).
+A list of what chains are supported is provided below in the <code>Types</code> section.
 
 The following table highlights the 30 different client hooks:
 
 <table>
     <tr>
-        <th>Client Hook Name</th>
         <th>Category</th>
+        <th>Client Hook Name</th>
+        <th>Description</th>
     <tr>
     <tr>
+        <td>ENS</td>
         <td><code>useFetchAddressENSLookup</code></td>
-        <td>ENS</td>
+        <td>Fetch the equivalent ENS name from a given address</td>
     </tr>
     <tr>
+        <td>ENS</td>
         <td><code>useFetchENSAddressLookup</code></td>
-        <td>ENS</td>
+        <td>Fetch the equivalent ETH address from a given ENS name</td>
     </tr>
     <tr>
+        <td>ENS</td>
         <td><code>useFetchENSIDLookup</code></td>
-        <td>ENS</td>
+        <td>Fetch information of a given ENS ID</td>
     </tr>
     <tr>
+        <td>ENS</td>
         <td><code>useFetchENSNameLookup</code></td>
-        <td>ENS</td>
+        <td>Fetch information of a given ENS name</td>
     </tr>
     <tr>
+        <td>ERC20</td>
         <td><code>useFetchERC20CollectionOwners</code></td>
-        <td>ERC720</td>
+        <td>Fetch list of owners of a particular ERC20 collection</td>
     </tr>
     <tr>
+        <td>ERC20</td>
         <td><code>useFetchERC20CollectionTopCoins</code></td>
-        <td>ERC720</td>
+        <td>Fetch list of the top ERC20 collections</td>
     </tr>
     <tr>
+        <td>ERC20</td>
         <td><code>useFetchERC20CollectionTransfers</code></td>
-        <td>ERC720</td>
+        <td>Fetch transfer activity of a particular ERC20 collection</td>
     </tr>
     <tr>
+        <td>ERC20</td>
         <td><code>useFetchERC20Holdings</code></td>
-        <td>ERC720</td>
+        <td>Track wallet holdings of a particular ERC20 token activity</td>
     </tr>
     <tr>
+        <td>ERC20</td>
         <td><code>useFetchERC20Transfers</code></td>
-        <td>ERC720</td>
+        <td>Track the transfer activity of a particular ERC20 token in a wallet</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721CollectionAttributes</code></td>
-        <td>ERC721</td>
+        <td>Fetch attributes of a particular ERC721 collection</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721CollectionData</code></td>
-        <td>ERC721</td>
+        <td>Fetch data of a particular ERC721 collection</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721CollectionExtraData</code></td>
-        <td>ERC721</td>
+        <td>Fetch extra data of a particular ERC721 collection</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721CollectionFloorPrice</code></td>
-        <td>ERC721</td>
+        <td>Fetch floor price data of a particular ERC721 collection</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721CollectionMarketCap</code></td>
-        <td>ERC721</td>
+        <td>Fetch market cap data of a particular ERC721 collection</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721CollectionSales</code></td>
-        <td>ERC721</td>
+        <td>Fetch sales data of a particular ERC721 collection</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721CollectionTransfers</code></td>
-        <td>ERC721</td>
+        <td>Fetch transfer activity of a particular ERC721 collection</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721CollectionTrends</code></td>
-        <td>ERC721</td>
+        <td>Fetch trending ERC721 collection data</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721CollectionVolume</code></td>
-        <td>ERC721</td>
+        <td>Fetch ERC721 collections by volume data</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721Holdings</code></td>
-        <td>ERC721</td>
+        <td>Fetch ERC721 holdings of a particular wallet</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721LookupData</code></td>
-        <td>ERC721</td>
+        <td>Fetch data of a particular ERC721 token</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721OpenseaData</code></td>
-        <td>ERC721</td>
+        <td>Fetch Opensea data of a particular ERC721 token</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721RarityData</code></td>
-        <td>ERC721</td>
+        <td>Fetch rarity data of a particular ERC721 token</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721SalesData</code></td>
-        <td>ERC721</td>
+        <td>Fetch sales data of a particular ERC721 token</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721TransferLookupData</code></td>
-        <td>ERC721</td>
+        <td>Fetch transfer data of a particular ERC721 token</td>
     </tr>
     <tr>
+        <td>ERC721</td>
         <td><code>useFetchERC721TransfersData</code></td>
-        <td>ERC721</td>
+        <td>Fetch ERC721 transfer activity of a particular wallet</td>
     </tr>
     <tr>
-        <td><code>useFetchGasLookup</code></td>
         <td>Gas</td>
+        <td><code>useFetchGasLookup</code></td>
+        <td>Fetch gas information related to Ethereum or a supported layer two</td>
     </tr>
     <tr>
+        <td>Prices</td>
         <td><code>useFetchERC20Price</code></td>
-        <td>Prices</td>
+        <td>Fetch pricing data of a particular ERC20 collection</td>
     </tr>
     <tr>
+        <td>Prices</td>
         <td><code>useFetchERC721Price</code></td>
-        <td>Prices</td>
+        <td>Fetch pricing data of a particular ERC721 collection</td>
     </tr>
     <tr>
+        <td>Prices</td>
         <td><code>useFetchETHPrice</code></td>
-        <td>Prices</td>
+        <td>Fetch Ethereum price data</td>
     </tr>
     <tr>
-        <td><code>useFetchLayerTwoPrice</code></td>
         <td>Prices</td>
+        <td><code>useFetchLayerTwoPrice</code></td>
+        <td>Fetch Layer Two price data</td>
     </tr>
 </table>
 
 <hr />
 
 ## Custom Hooks
-Custom hooks were used for development convenience and were fully incorporated into the main client hooks. The following table depicts the custom hooks used for development:
+Custom hooks were used for development convenience and were fully incorporated into the main client hooks. The following table depicts the custom hooks:
 
 <table>
     <tr>
