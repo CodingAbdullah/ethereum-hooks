@@ -1,5 +1,5 @@
 {
-  "name": "ethereum-api-hooks",
+  "name": "ethereum-hooks",
   "version": "1.0.0",
   "description": "Package containing useful React hooks for working with the Ethereum Blockchain.",
   "main": "server/server.ts",
@@ -27,7 +27,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "ethereum-api-hooks": "file:"
+    "ethereum-api-hooks": "file:",
+    "ethereum-hooks": "file:"
   },
   "devDependencies": {
     "ts-node": "^10.9.0",
