@@ -188,7 +188,7 @@ The following table highlights the 30 different client hooks:
     </tr>
     <tr>
         <td>Prices</td>
-        <td><code>useFetchETHPrice(currentPrice: string, duration: 2 | 14 | 30)</code></td>
+        <td><code>useFetchETHPrice(currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
         <td>Fetch Ethereum price data</td>
     </tr>
     <tr>
