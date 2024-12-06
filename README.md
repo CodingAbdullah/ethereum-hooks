@@ -225,7 +225,7 @@ Custom data types were developed for fetch state and defining a set of available
         <th>Function</th>
     <tr>
     <tr>
-        <td><code>FetchState</code></td>
+        <td><code>FetchStateType</code></td>
         <td>To fetch data readily using a set of defined parameters</td>
     </tr>
     <tr>

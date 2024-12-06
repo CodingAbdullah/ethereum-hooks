@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { FetchState } from '../types/FetchState';
+import { FetchStateType } from '../types/FetchStateType';
 
 // Custom hook for fetching data using the FETCH Client API
 export const useFetch = <T = any>(URL: string, options: RequestInit = {}) => {
-    const [state, setState] = useState<FetchState<T>>({
+    const [state, setState] = useState<FetchStateType<T>>({
         data: null,
         loading: false,
         error: false
