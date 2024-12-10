@@ -26,12 +26,11 @@
   "author": "CodingAbdullah",
   "license": "MIT",
   "private": false,
-  "dependencies": {
-    "ethereum-api-hooks": "file:",
-    "ethereum-hooks": "file:"
-  },
   "devDependencies": {
     "ts-node": "^10.9.0",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "ethereum-hooks": "file:"
   }
 }

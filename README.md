@@ -1,4 +1,4 @@
-# ethereum-api-hooks
+# ethereum-hooks
 A package containing useful hooks for working with the Ethereum blockchain using crypto APIs. The following resources will be referenced when building these hooks:
 
 - <a href="https://docs.alchemy.com/reference/api-overview">Alchemy</a>
@@ -13,23 +13,32 @@ A package containing useful hooks for working with the Ethereum blockchain using
 ## React Hooks Client-Server Setup
 When working with this package, you will need to implement the typical MERN design pattern. Set up <code>.env</code> variables and set up the server to allow the client hooks to establish communication.
 
-<b>By default, it is assumed that the NODE server is running on PORT 5000. You will need to set the <code>PORT</code> and the following API keys in your <code>.env</code> file: </b>
+<b>You will need to set the following environment variables in your <code>.env</code> file: </b>
 
 - <code>ALCHEMY_API_KEY</code>
 - <code>BLK_API_KEY</code>
+- <code>CLIENT_PORT</code>
 - <code>COINGECKO_API_KEY</code>
 - <code>MORALIS_API_KEY</code>
 - <code>OPENSEA_API_KEY</code>
+- <code>PORT</code>
 - <code>TRANSPOSE_API_KEY</code>
 
 The following diagram will help you understand the flow of how everything works:
 
-<img src="hook-server-design.png" alt="Hook Server" width="600" height="400" />
+<img src="https://genericbucket95.s3.us-east-2.amazonaws.com/hook-server-design.png" alt="Hook Server" width="600" height="400" />
 
 <br />
 
 ## Link to Published NPM Package
 - <a href="https://www.npmjs.com/package/ethereum-hooks">Ethereum Hooks</a>
+
+<br />
+
+## Server Setup
+
+For this part, you will need to incorporate the server object exported from the <code>server.ts</code> file inside the server directory.
+<b>You will need to build on top of this built-in server any additional routes and configurations as this server contains all the routes needed to effectively use the client hooks. </b>
 
 <br />
 

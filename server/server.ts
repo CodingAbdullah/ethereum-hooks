@@ -20,9 +20,9 @@ const WalletStatsRouter = require('./Routes/WalletStatsRouter');
 dotenv.config({ path: '.env' });
 const app = express();
 
-// CORS options to allow connections from port 3000
+// CORS options to allow connections from client port
 const corsOptions: CorsOptions = {
-    origin: 'http://localhost:3000', // Allow requests from this origin
+    origin: 'http://localhost:' + process.env.CLIENT_PORT // Allow requests from this origin
 };
 
 // Set up middleware
@@ -48,3 +48,6 @@ app.use("/", GlobalDefiDataRouter);
 app.use("/", MarketDataRouter);
 app.use("/", TransactionsRouter);
 app.use("/", WalletStatsRouter);
+
+// Export ready-made server for usage
+export default app;
