@@ -1,8 +1,8 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching Address to ENS Custom hook
-export const useFetchAddressENSLookup = (address: string) => {
-    const URL = 'http://localhost:5000/address-to-ens-information'; // Define the API endpoint
+export const useFetchAddressENSLookup = (address: string, port: number) => {
+    const URL = `http://localhost:${port}/address-to-ens-information`; // Define the API endpoint
     
     const options = {
         method: 'POST',

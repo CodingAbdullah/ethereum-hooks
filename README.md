@@ -44,7 +44,7 @@ For this part, you will need to incorporate the server object exported from the 
 
 ## React Client Hooks
 
-The hooks cover several areas of the Ethereum blockchain and can be used for Layer Two chains as well.
+The hooks cover several areas of the Ethereum blockchain and can be used for Layer Two chains as well. You will need to specify the <b>server port number</b> in order to access it for local development API calls.
 A list of what chains are supported is provided below in the <code>Types</code> section.
 
 The following table highlights the 30 different client hooks:
@@ -57,152 +57,152 @@ The following table highlights the 30 different client hooks:
     <tr>
     <tr>
         <td>ENS</td>
-        <td><code>useFetchAddressENSLookup(address: string)</code></td>
+        <td><code>useFetchAddressENSLookup(address: string, port: number)</code></td>
         <td>Fetch the equivalent ENS name from a given address</td>
     </tr>
     <tr>
         <td>ENS</td>
-        <td><code>useFetchENSAddressLookup(ensName: string)</code></td>
+        <td><code>useFetchENSAddressLookup(ensName: string, port: number)</code></td>
         <td>Fetch the equivalent ETH address from a given ENS name</td>
     </tr>
     <tr>
         <td>ENS</td>
-        <td><code>useFetchENSIDLookup(id: string)</code></td>
+        <td><code>useFetchENSIDLookup(id: string, port: number)</code></td>
         <td>Fetch information of a given ENS ID</td>
     </tr>
     <tr>
         <td>ENS</td>
-        <td><code>useFetchENSNameLookup(ensName: string)</code></td>
+        <td><code>useFetchENSNameLookup(ensName: string, port: number)</code></td>
         <td>Fetch information of a given ENS name</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20CollectionOwners(contractAddress: string)</code></td>
+        <td><code>useFetchERC20CollectionOwners(contractAddress: string, port: number)</code></td>
         <td>Fetch list of owners of a particular ERC20 collection</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20CollectionTopCoins()</code></td>
+        <td><code>useFetchERC20CollectionTopCoins(port: number)</code></td>
         <td>Fetch list of the top ERC20 collections</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20CollectionTransfers(contractAddress: string)</code></td>
+        <td><code>useFetchERC20CollectionTransfers(contractAddress: string, port: number)</code></td>
         <td>Fetch transfer activity of a particular ERC20 collection</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20Holdings(contractAddress: string)</code></td>
+        <td><code>useFetchERC20Holdings(contractAddress: string, port: number)</code></td>
         <td>Track wallet holdings of a particular ERC20 token activity</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20Transfers(contractAddress: string)</code></td>
+        <td><code>useFetchERC20Transfers(contractAddress: string, port: number)</code></td>
         <td>Track the transfer activity of a particular ERC20 token in a wallet</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionAttributes(contractAddress: string)</code></td>
+        <td><code>useFetchERC721CollectionAttributes(contractAddress: string, port: number)</code></td>
         <td>Fetch attributes of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionData(contractAddress: string)</code></td>
+        <td><code>useFetchERC721CollectionData(contractAddress: string, port: number)</code></td>
         <td>Fetch data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionExtraData(contractAddress: string)</code></td>
+        <td><code>useFetchERC721CollectionExtraData(contractAddress: string, port: number)</code></td>
         <td>Fetch extra data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionFloorPrice(contractAddress: string)</code></td>
+        <td><code>useFetchERC721CollectionFloorPrice(contractAddress: string, port: number)</code></td>
         <td>Fetch floor price data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionMarketCap(contractAddress: string, duration: 2 | 14 | 30)</code></td>
+        <td><code>useFetchERC721CollectionMarketCap(contractAddress: string, duration: 2 | 14 | 30, port: number)</code></td>
         <td>Fetch market cap data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionSales(contractAddress: string)</code></td>
+        <td><code>useFetchERC721CollectionSales(contractAddress: string, port: number)</code></td>
         <td>Fetch sales data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionTransfers(contractAddress: string)</code></td>
+        <td><code>useFetchERC721CollectionTransfers(contractAddress: string, port: number)</code></td>
         <td>Fetch transfer activity of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionTrends()</code></td>
+        <td><code>useFetchERC721CollectionTrends(port: number)</code></td>
         <td>Fetch trending ERC721 collection data</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionVolume()</code></td>
+        <td><code>useFetchERC721CollectionVolume(port: number)</code></td>
         <td>Fetch ERC721 collections by volume data</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721Holdings(walletAddress: string)</code></td>
+        <td><code>useFetchERC721Holdings(walletAddress: string, port: number)</code></td>
         <td>Fetch ERC721 holdings of a particular wallet</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721LookupData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useFetchERC721LookupData(contractAddress: string, tokenID: string, port: number)</code></td>
         <td>Fetch data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721OpenseaData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useFetchERC721OpenseaData(contractAddress: string, tokenID: string, port: number)</code></td>
         <td>Fetch Opensea data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721RarityData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useFetchERC721RarityData(contractAddress: string, tokenID: string, port: number)</code></td>
         <td>Fetch rarity data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721SalesData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useFetchERC721SalesData(contractAddress: string, tokenID: string, port: number)</code></td>
         <td>Fetch sales data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721TransferLookupData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useFetchERC721TransferLookupData(contractAddress: string, tokenID: string, port: number)</code></td>
         <td>Fetch transfer data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721TransfersData(walletAddress: string)</code></td>
+        <td><code>useFetchERC721TransfersData(walletAddress: string, port: number)</code></td>
         <td>Fetch ERC721 transfer activity of a particular wallet</td>
     </tr>
     <tr>
         <td>Gas</td>
-        <td><code>useFetchGasLookup()</code></td>
+        <td><code>useFetchGasLookup(port: number)</code></td>
         <td>Fetch gas information related to Ethereum or a supported layer two</td>
     </tr>
     <tr>
         <td>Prices</td>
-        <td><code>useFetchERC20Price(contractAddress: string, currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
+        <td><code>useFetchERC20Price(contractAddress: string, currentPrice: boolean, duration: 2 | 14 | 30, port: number)</code></td>
         <td>Fetch pricing data of a particular ERC20 collection</td>
     </tr>
     <tr>
         <td>Prices</td>
-        <td><code>useFetchERC721Price(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useFetchERC721Price(contractAddress: string, tokenID: string, port: number)</code></td>
         <td>Fetch pricing data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>Prices</td>
-        <td><code>useFetchETHPrice(currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
+        <td><code>useFetchETHPrice(currentPrice: boolean, duration: 2 | 14 | 30, port: number)</code></td>
         <td>Fetch Ethereum price data</td>
     </tr>
     <tr>
         <td>Prices</td>
-        <td><code>useFetchLayerTwoPrice(layerTwo: LayerTwoNetworks, currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
+        <td><code>useFetchLayerTwoPrice(layerTwo: LayerTwoNetworks, currentPrice: boolean, duration: 2 | 14 | 30, port: number)</code></td>
         <td>Fetch Layer Two price data</td>
     </tr>
 </table>

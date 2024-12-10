@@ -2,8 +2,8 @@ import axios from "axios";
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ENS to Address Custom hook
-export const useFetchENSAddressLookup = (ensName: string) => {
-    const URL = 'http://localhost:5000/additional-address-to-ens-information'; // Define the API endpoint
+export const useFetchENSAddressLookup = (ensName: string, port: number) => {
+    const URL = `http://localhost:${port}/additional-address-to-ens-information`; // Define the API endpoint
     
     const options = {
         method: 'POST',

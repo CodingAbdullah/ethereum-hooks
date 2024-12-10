@@ -1,8 +1,8 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetch ENS Name lookups
-export const useFetchENSNameLookup = (ensName: string) => {
-    const URL = 'https://localhost:5000/ens-transfers-by-name'; // Define the API endpoint
+export const useFetchENSNameLookup = (ensName: string, port: number) => {
+    const URL = `https://localhost:${port}/ens-transfers-by-name`; // Define the API endpoint
     
     const options = {
         method: 'POST',

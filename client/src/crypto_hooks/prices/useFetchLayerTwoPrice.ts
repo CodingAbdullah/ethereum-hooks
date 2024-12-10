@@ -2,7 +2,7 @@ import { LayerTwoNetworks } from "../../types/LayerTwoType";
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching Layer Two Prices Hook
-export const useFetchLayerTwoPrice = async (layerTwo: LayerTwoNetworks, currentPrice: boolean, duration: 2 | 14 | 30) => {
+export const useFetchLayerTwoPrice = async (layerTwo: LayerTwoNetworks, currentPrice: boolean, duration: 2 | 14 | 30, port: number) => {
 
     // Set options for request
     let options = {
@@ -14,7 +14,7 @@ export const useFetchLayerTwoPrice = async (layerTwo: LayerTwoNetworks, currentP
     }
 
     // Use the custom hook to fetch data
-    const state = useFetch('http://localhost:5000/layer-two-prices', options);
+    const state = useFetch(`http://localhost:${port}/layer-two-prices`, options);
 
     // Return the state from the custom hook
     return state;

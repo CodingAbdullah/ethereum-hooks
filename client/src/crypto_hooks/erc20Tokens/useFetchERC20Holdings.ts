@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC20 Collection Holdings
-export const useFetchERC20Holdings = async (contractAddress: string) => {
+export const useFetchERC20Holdings = async (contractAddress: string, port: number) => {
 
     // Set options for request
     let options = {
@@ -13,7 +13,7 @@ export const useFetchERC20Holdings = async (contractAddress: string) => {
     }
 
     // Use the custom hook to fetch data
-    const state = useFetch('http://localhost:5000/erc20-collection-holdings', options);
+    const state = useFetch(`http://localhost:${port}/erc20-collection-holdings`, options);
 
     // Return the state from the custom hook
     return state;
