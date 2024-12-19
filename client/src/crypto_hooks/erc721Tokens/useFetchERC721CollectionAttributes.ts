@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC721 Collection Attributes Hook
-export const useFetchERC721CollectionAttributes = async (contractAddress: string, port: number) => {
+export const useFetchERC721CollectionAttributes = async (contractAddress: string, serverURL: string) => {
 
     // Set options for request
     let options = {
@@ -13,7 +13,8 @@ export const useFetchERC721CollectionAttributes = async (contractAddress: string
     }
 
     // Use the custom hook to fetch data
-    const state = useFetch(`http://localhost:${port}/erc721-collection-attributes`, options);
+    // ENDPOINT - /erc721-collection-attributes
+    const state = useFetch(serverURL, options);
 
     // Return the state from the custom hook
     return state;

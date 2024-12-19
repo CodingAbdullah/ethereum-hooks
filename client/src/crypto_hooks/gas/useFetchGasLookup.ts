@@ -1,9 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching Address to ENS Custom hook
-export const useFetchGasLookup = (port: number) => {
-    const URL = `http://localhost:${port}/gas-information`; // Define the API endpoint
-    
+export const useFetchGasLookup = (serverURL: string) => {
     const options = {
         method: 'GET',
         headers: {
@@ -11,7 +9,8 @@ export const useFetchGasLookup = (port: number) => {
         }
     };
 
-    const state = useFetch(URL, options); // Use the custom hook to fetch data
+    // ENDPOINT - /gas-information
+    const state = useFetch(serverURL, options); // Use the custom hook to fetch data
 
     return state; // Return the state from the custom hook
 }

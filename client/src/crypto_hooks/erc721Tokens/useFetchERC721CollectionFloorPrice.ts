@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC721 Collection Floor Price Hook
-export const useFetchERC721CollectionFloorPrice = async (contractAddress: string, port: number) => {
+export const useFetchERC721CollectionFloorPrice = async (contractAddress: string, serverURL: string) => {
 
     // Set options for request
     let options = {
@@ -13,7 +13,8 @@ export const useFetchERC721CollectionFloorPrice = async (contractAddress: string
     }
 
     // Use the custom hook to fetch data
-    const state = useFetch(`http://localhost:${port}/erc721-collection-floor-price`, options);
+    // ENDPOINT - /erc721-collection-floor-price
+    const state = useFetch(serverURL, options);
 
     // Return the state from the custom hook
     return state;
