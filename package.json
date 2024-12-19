@@ -11,6 +11,10 @@
     "build-server": "tsc -p server/tsconfig.json",
     "test": "echo \"No tests specified\" && exit 0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodingAbdullah/ethereum-hooks.git"
+  },
   "keywords": [
     "api",
     "blockchain",
