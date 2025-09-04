@@ -1,5 +1,0 @@
-# Adding node_modules directory here
-node_modules
-
-# Adding environment variables to file
-.env
