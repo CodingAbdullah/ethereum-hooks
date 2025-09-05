@@ -1,6 +1,6 @@
 {
   "name": "ethereum-hooks",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Resourceful NPM package that contains React hooks for working with the Ethereum Blockchain.",
   "main": "crypto_hooks/index.js",
   "types": "crypto_hooks/index.d.ts",
@@ -9,9 +9,9 @@
     "url": "https://github.com/CodingAbdullah/ethereum-hooks.git"
   },
   "keywords": [
+    "aws",
     "api",
     "blockchain",
-    "data",
     "ethereum",
     "hooks",
     "reactjs",
