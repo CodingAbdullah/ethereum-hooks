@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC721 Collection Data Hook
-export const useFetchERC721CollectionData = async (contractAddress: string) => {
+export const useERC721CollectionData = async (contractAddress: string) => {
 
     // Set options for request
     let options = {

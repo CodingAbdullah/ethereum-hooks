@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
-// Fetching ERC721 Collection Attributes Hook
-export const useFetchERC721CollectionAttributes = async (contractAddress: string) => {
+// Fetching ERC721 Collection Sales Hook
+export const useERC721CollectionSales = async (contractAddress: string) => {
 
     // Set options for request
     let options = {
@@ -13,8 +13,8 @@ export const useFetchERC721CollectionAttributes = async (contractAddress: string
     }
 
     // Use the custom hook to fetch data
-    // ENDPOINT - /erc721-collection-attributes
-    const state = useFetch("https://7rs4acgso6ld44zjpl25jras3q0szvag.lambda-url.us-east-1.on.aws/", options);
+    // ENDPOINT - /erc721-collection-sales
+    const state = useFetch("https://b5xcn2afinyiq32izaoxe4mzua0ggxvm.lambda-url.us-east-1.on.aws/", options);
 
     // Return the state from the custom hook
     return state;

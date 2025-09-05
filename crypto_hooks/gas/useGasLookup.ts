@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching Address to ENS Custom hook
-export const useFetchGasLookup = () => {
+export const useGasLookup = () => {
     const options = {
         method: 'GET',
         headers: {

@@ -1,19 +1,20 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
-// Fetching ERC20 Collection Top Coins
-export const useFetchERC20CollectionTopCoins = async () => {
+// Fetching ETH Prices Hook
+export const useETHPrice = async (currentPrice: boolean, duration: 2 | 14 | 30) => {
 
     // Set options for request
     let options = {
         method: 'POST',
+        body: JSON.stringify({ currentPrice, duration }),
         headers : {
             'accept' : 'application/json'
         }
     }
 
     // Use the custom hook to fetch data
-    // ENDPOINT - /erc20-top-coins
-    const state = useFetch("https://2ebpropr2dgzqicposkbrvr5nq0ofyyx.lambda-url.us-east-1.on.aws/", options);
+    // ENDPOINT - /eth-price
+    const state = useFetch("https://fl5mxvcm42g3n7wtodnxq52s2a0jeokj.lambda-url.us-east-1.on.aws/", options);
 
     // Return the state from the custom hook
     return state;

@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC721 Sales data hook
-export const useFetchERC721SalesData = async (contractAddress: string, tokenID: string) => {
+export const useERC721SalesData = async (contractAddress: string, tokenID: string) => {
     
     // Set options for request
     let options = {

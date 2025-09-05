@@ -1,7 +1,8 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
-// Fetching ERC721 Prices Hook
-export const useFetchERC721Price = async (contractAddress: string, tokenID: number) => {
+// Fetching ERC721 Rarity data hook
+export const useERC721RarityData = async (contractAddress: string, tokenID: string) => {
+    
     // Set options for request
     let options = {
         method: 'POST',
@@ -12,8 +13,8 @@ export const useFetchERC721Price = async (contractAddress: string, tokenID: numb
     }
 
     // Use the custom hook to fetch data
-    // ENDPOINT - /erc721-token-price
-    const state = useFetch("https://brjvjnlp35ln3solbquo6fiize0bnwje.lambda-url.us-east-1.on.aws/", options);
+    // ENDPOINT - /erc721-rarity-data
+    const state = useFetch("https://eilobcax7r4wayov2rfscraqb40rodzv.lambda-url.us-east-1.on.aws/", options);
 
     // Return the state from the custom hook
     return state;

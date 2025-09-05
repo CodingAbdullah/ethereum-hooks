@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC721 Collection Market Cap Hook
-export const useFetchERC721CollectionMarketCap = async (contractAddress: string, duration: 2 | 14 | 30) => {
+export const useERC721CollectionMarketCap = async (contractAddress: string, duration: 2 | 14 | 30) => {
 
     // Set options for request
     let options = {

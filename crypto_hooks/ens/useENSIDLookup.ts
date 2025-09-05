@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetch ENS ID lookups
-export const useFetchENSIDLookup = (id: string) => {    
+export const useENSIDLookup = (id: string) => {    
     const options = {
         method: 'POST',
         body: JSON.stringify({ id }),

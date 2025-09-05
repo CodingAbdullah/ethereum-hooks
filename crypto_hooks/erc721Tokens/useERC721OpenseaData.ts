@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC721 Opensea data hook
-export const useFetchERC721OpenseaData = async (contractAddress: string, tokenID: string) => {
+export const useERC721OpenseaData = async (contractAddress: string, tokenID: string) => {
     
     // Set options for request
     let options = {

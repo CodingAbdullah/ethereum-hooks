@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetch ENS Name lookups
-export const useFetchENSNameLookup = (ensName: string) => {
+export const useENSNameLookup = (ensName: string) => {
     
     const options = {
         method: 'POST',

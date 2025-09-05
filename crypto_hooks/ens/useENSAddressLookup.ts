@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ENS to Address Custom hook
-export const useFetchENSAddressLookup = (ensName: string) => {    
+export const useENSAddressLookup = (ensName: string) => {    
     const options = {
         method: 'POST',
         body: JSON.stringify({ ensName }),

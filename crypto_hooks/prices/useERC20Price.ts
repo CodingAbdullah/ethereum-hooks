@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC20 Prices Hook
-export const useFetchERC20Price = async (contractAddress: string, currentPrice: boolean, duration: 2 | 14 | 30) => {
+export const useERC20Price = async (contractAddress: string, currentPrice: boolean, duration: 2 | 14 | 30) => {
 
     // Set options for request
     let options = {

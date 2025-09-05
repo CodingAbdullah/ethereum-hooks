@@ -2,7 +2,7 @@ import { LayerTwoNetworks } from "../../types/LayerTwoType";
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching Layer Two Prices Hook
-export const useFetchLayerTwoPrice = async (layerTwo: LayerTwoNetworks, currentPrice: boolean, duration: 2 | 14 | 30) => {
+export const useLayerTwoPrice = async (layerTwo: LayerTwoNetworks, currentPrice: boolean, duration: 2 | 14 | 30) => {
 
     // Set options for request
     let options = {

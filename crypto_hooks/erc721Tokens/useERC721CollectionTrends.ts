@@ -1,7 +1,7 @@
 import { useFetch } from "../../custom_hooks/useFetch";
 
 // Fetching ERC721 Collection Trends Hook
-export const useFetchERC721CollectionTrends = async () => {
+export const useERC721CollectionTrends = async () => {
 
     // Set options for request
     let options = {
