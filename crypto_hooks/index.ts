@@ -1,39 +1,39 @@
 // ENS Hooks
-export { useFetchAddressENSLookup } from './ens/useFetchAddressENSLookup';
-export { useFetchENSAddressLookup } from './ens/useFetchENSAddressLookup';
-export { useFetchENSIDLookup } from './ens/useFetchENSIDLookup';
-export { useFetchENSNameLookup } from './ens/useFetchENSNameLookup';
+export { useAddressENSLookup } from './ens/useAddressENSLookup';
+export { useENSAddressLookup } from './ens/useENSAddressLookup';
+export { useENSIDLookup } from './ens/useENSIDLookup';
+export { useENSNameLookup } from './ens/useENSNameLookup';
 
 // ERC20 Token Hooks
-export { useFetchERC20CollectionOwners } from './erc20Tokens/useFetchERC20CollectionOwners';
-export { useFetchERC20CollectionTopCoins } from './erc20Tokens/useFetchERC20CollectionTopCoins';
-export { useFetchERC20CollectionTransfers } from './erc20Tokens/useFetchERC20CollectionTransfers';
-export { useFetchERC20Holdings } from './erc20Tokens/useFetchERC20Holdings';
-export { useFetchERC20Transfers } from './erc20Tokens/useFetchERC20Transfers';
+export { useERC20CollectionOwners } from './erc20Tokens/useERC20CollectionOwners';
+export { useERC20CollectionTopCoins } from './erc20Tokens/useERC20CollectionTopCoins';
+export { useERC20CollectionTransfers } from './erc20Tokens/useERC20CollectionTransfers';
+export { useERC20Holdings } from './erc20Tokens/useERC20Holdings';
+export { useERC20Transfers } from './erc20Tokens/useERC20Transfers';
 
 // ERC721 Token Hooks
-export { useFetchERC721CollectionAttributes } from './erc721Tokens/useFetchERC721CollectionAttributes';
-export { useFetchERC721CollectionData } from './erc721Tokens/useFetchERC721CollectionData';
-export { useFetchERC721CollectionExtraData } from './erc721Tokens/useFetchERC721CollectionExtraData';
-export { useFetchERC721CollectionFloorPrice } from './erc721Tokens/useFetchERC721CollectionFloorPrice';
-export { useFetchERC721CollectionMarketCap } from './erc721Tokens/useFetchERC721CollectionMarketCap';
-export { useFetchERC721CollectionSales } from './erc721Tokens/useFetchERC721CollectionSales';
-export { useFetchERC721CollectionTransfers } from './erc721Tokens/useFetchERC721CollectionTransfers';
-export { useFetchERC721CollectionTrends } from './erc721Tokens/useFetchERC721CollectionTrends';
-export { useFetchERC721CollectionVolume } from './erc721Tokens/useFetchERC721CollectionVolume';
-export { useFetchERC721Holdings } from './erc721Tokens/useFetchERC721Holdings';
-export { useFetchERC721LookupData } from './erc721Tokens/useFetchERC721LookupData';
-export { useFetchERC721OpenseaData } from './erc721Tokens/useFetchERC721OpenseaData';
-export { useFetchERC721RarityData } from './erc721Tokens/useFetchERC721RarityData';
-export { useFetchERC721SalesData } from './erc721Tokens/useFetchERC721SalesData';
-export { useFetchERC721TransferLookupData } from './erc721Tokens/useFetchERC721TransferLookupData';
-export { useFetchERC721TransfersData } from './erc721Tokens/useFetchERC721TransfersData';
+export { useERC721CollectionAttributes } from './erc721Tokens/useERC721CollectionAttributes';
+export { useERC721CollectionData } from './erc721Tokens/useERC721CollectionData';
+export { useERC721CollectionExtraData } from './erc721Tokens/useERC721CollectionExtraData';
+export { useERC721CollectionFloorPrice } from './erc721Tokens/useERC721CollectionFloorPrice';
+export { useERC721CollectionMarketCap } from './erc721Tokens/useERC721CollectionMarketCap';
+export { useERC721CollectionSales } from './erc721Tokens/useERC721CollectionSales';
+export { useERC721CollectionTransfers } from './erc721Tokens/useERC721CollectionTransfers';
+export { useERC721CollectionTrends } from './erc721Tokens/useERC721CollectionTrends';
+export { useERC721CollectionVolume } from './erc721Tokens/useERC721CollectionVolume';
+export { useERC721Holdings } from './erc721Tokens/useERC721Holdings';
+export { useERC721LookupData } from './erc721Tokens/useERC721LookupData';
+export { useERC721OpenseaData } from './erc721Tokens/useERC721OpenseaData';
+export { useERC721RarityData } from './erc721Tokens/useERC721RarityData';
+export { useERC721SalesData } from './erc721Tokens/useERC721SalesData';
+export { useERC721TransferLookupData } from './erc721Tokens/useERC721TransferLookupData';
+export { useERC721TransfersData } from './erc721Tokens/useERC721TransfersData';
 
 // Gas Hooks
-export { useFetchGasLookup } from './gas/useFetchGasLookup';
+export { useGasLookup } from './gas/useGasLookup';
 
 // Price Hooks
-export { useFetchERC20Price } from './prices/useFetchERC20Price';
-export { useFetchERC721Price } from './prices/useFetchERC721Price';
-export { useFetchETHPrice } from './prices/useFetchETHPrice';
-export { useFetchLayerTwoPrice } from './prices/useFetchLayerTwoPrice';
+export { useERC20Price } from './prices/useERC20Price';
+export { useERC721Price } from './prices/useERC721Price';
+export { useETHPrice } from './prices/useETHPrice';
+export { useLayerTwoPrice } from './prices/useLayerTwoPrice';

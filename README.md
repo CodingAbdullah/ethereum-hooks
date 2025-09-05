@@ -37,14 +37,14 @@ Here is a quick example of how you can work with client hooks. The following is 
 <code>ENSToAddressPage.tsx</code>
 ```javascript
 import React, { FC }  from 'react';
-import { useFetchENSAddressLookup } from 'ethereum-hooks';
+import { useENSAddressLookup } from 'ethereum-hooks';
 
 // Incorporating the ENS to Address Client Hook.. using Vitalik Buterin's address
 // No server setup required - connects directly to AWS Lambda
 
 const ENSToAddressPage: FC = () => {
     // Hook automatically connects to AWS Lambda - no server setup required
-    const addressInformation = useFetchENSAddressLookup('vitalik.eth');
+    const addressInformation = useENSAddressLookup('vitalik.eth');
     
     // Each client hook uses the useFetch custom hook
     // It returns three states: data, error, loading
@@ -94,181 +94,181 @@ The following table shows the **30 different client hooks** and their correspond
     </tr>
     <tr>
         <td>ENS</td>
-        <td><code>useFetchAddressENSLookup(address: string)</code></td>
+        <td><code>useAddressENSLookup(address: string)</code></td>
         <td><code>https://37zq2u4ntbygkw7inki3djjm440xctyd.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch the equivalent ENS name from a given address</td>
     </tr>
     <tr>
         <td>ENS</td>
-        <td><code>useFetchENSAddressLookup(ensName: string)</code></td>
+        <td><code>useENSAddressLookup(ensName: string)</code></td>
         <td><code>https://jy3upsy3rgbengcktqlqfcwyhy0wcamb.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch the equivalent ETH address from a given ENS name</td>
     </tr>
     <tr>
         <td>ENS</td>
-        <td><code>useFetchENSIDLookup(id: string)</code></td>
+        <td><code>useENSIDLookup(id: string)</code></td>
         <td><code>https://ev6i3gsesgdvj7ouxiwpg4qafu0nfvdw.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch information of a given ENS ID</td>
     </tr>
     <tr>
         <td>ENS</td>
-        <td><code>useFetchENSNameLookup(ensName: string)</code></td>
+        <td><code>useENSNameLookup(ensName: string)</code></td>
         <td><code>https://f53actwgpl2a3rk6uynoryuoxq0eifuo.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch information of a given ENS name</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20CollectionOwners(contractAddress: string)</code></td>
+        <td><code>useERC20CollectionOwners(contractAddress: string)</code></td>
         <td><code>https://hyrbuxy6aivjqjrgtogd3nx5we0gcxjr.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch list of owners of a particular ERC20 collection</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20CollectionTopCoins()</code></td>
+        <td><code>useERC20CollectionTopCoins()</code></td>
         <td><code>https://2ebpropr2dgzqicposkbrvr5nq0ofyyx.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch list of the top ERC20 collections</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20CollectionTransfers(contractAddress: string)</code></td>
+        <td><code>useERC20CollectionTransfers(contractAddress: string)</code></td>
         <td><code>https://bwqre7ze2vm3sum5avrvwzwbrm0gyxcy.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch transfer activity of a particular ERC20 collection</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20Holdings(contractAddress: string)</code></td>
+        <td><code>useERC20Holdings(contractAddress: string)</code></td>
         <td><code>https://2i2neqclwlgygwimhbzlhdtjwa0dupee.lambda-url.us-east-1.on.aws/</code></td>
         <td>Track wallet holdings of a particular ERC20 token activity</td>
     </tr>
     <tr>
         <td>ERC20</td>
-        <td><code>useFetchERC20Transfers(contractAddress: string)</code></td>
+        <td><code>useERC20Transfers(contractAddress: string)</code></td>
         <td><code>https://msee4ccresifmjhm3mdedry3ki0xvdgx.lambda-url.us-east-1.on.aws/</code></td>
         <td>Track the transfer activity of a particular ERC20 token in a wallet</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionAttributes(contractAddress: string)</code></td>
+        <td><code>useERC721CollectionAttributes(contractAddress: string)</code></td>
         <td><code>https://7rs4acgso6ld44zjpl25jras3q0szvag.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch attributes of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionData(contractAddress: string)</code></td>
+        <td><code>useERC721CollectionData(contractAddress: string)</code></td>
         <td><code>https://u2pdhfz4qbfkkyp6z4yg4n57hq0hzica.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionExtraData(contractAddress: string)</code></td>
+        <td><code>useERC721CollectionExtraData(contractAddress: string)</code></td>
         <td><code>https://b5mkshxv54bbj4d54rxze5cj6q0xhptc.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch extra data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionFloorPrice(contractAddress: string)</code></td>
+        <td><code>useERC721CollectionFloorPrice(contractAddress: string)</code></td>
         <td><code>https://343rc276twphsdjwtzrzjytepu0xdxxn.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch floor price data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionMarketCap(contractAddress: string, duration: 2 | 14 | 30)</code></td>
+        <td><code>useERC721CollectionMarketCap(contractAddress: string, duration: 2 | 14 | 30)</code></td>
         <td><code>https://o5ntejtug7ixeetoqf5uxjpwgq0mbtvt.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch market cap data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionSales(contractAddress: string)</code></td>
+        <td><code>useERC721CollectionSales(contractAddress: string)</code></td>
         <td><code>https://b5xcn2afinyiq32izaoxe4mzua0ggxvm.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch sales data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionTransfers(contractAddress: string)</code></td>
+        <td><code>useERC721CollectionTransfers(contractAddress: string)</code></td>
         <td><code>https://lrtnsabh6hkimp4hqonw3foi2e0zzuxq.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch transfer activity of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionTrends()</code></td>
+        <td><code>useERC721CollectionTrends()</code></td>
         <td><code>https://hmzkjpwut4bwaeovhryd6hie540fwvzi.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch trending ERC721 collection data</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721CollectionVolume()</code></td>
+        <td><code>useERC721CollectionVolume()</code></td>
         <td><code>https://zlksxwjaikudsub4rmcc5c4eme0uqntg.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch ERC721 collections by volume data</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721Holdings(walletAddress: string)</code></td>
+        <td><code>useERC721Holdings(walletAddress: string)</code></td>
         <td><code>https://rmepnjzubrgdsvmb66kdwz5upm0khfor.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch ERC721 holdings of a particular wallet</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721LookupData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useERC721LookupData(contractAddress: string, tokenID: string)</code></td>
         <td><code>https://rd7cae6wlnx3lsiuncgjgeap5e0lkbew.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721OpenseaData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useERC721OpenseaData(contractAddress: string, tokenID: string)</code></td>
         <td><code>https://qoeq2n767jbu5gbiiy7463d56m0cwdec.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch Opensea data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721RarityData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useERC721RarityData(contractAddress: string, tokenID: string)</code></td>
         <td><code>https://eilobcax7r4wayov2rfscraqb40rodzv.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch rarity data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721SalesData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useERC721SalesData(contractAddress: string, tokenID: string)</code></td>
         <td><code>https://nhjz6tqihl6bdt7zukf5ru7wnu0ydoqq.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch sales data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721TransferLookupData(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useERC721TransferLookupData(contractAddress: string, tokenID: string)</code></td>
         <td><code>https://o66cbw3kaufg5t3k2fl5ydazbq0tvfaz.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch transfer data of a particular ERC721 token</td>
     </tr>
     <tr>
         <td>ERC721</td>
-        <td><code>useFetchERC721TransfersData(walletAddress: string)</code></td>
+        <td><code>useERC721TransfersData(walletAddress: string)</code></td>
         <td><code>https://gnfeczsyzj4v6rsyf4zmlpv23q0uixkv.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch ERC721 transfer activity of a particular wallet</td>
     </tr>
     <tr>
         <td>Gas</td>
-        <td><code>useFetchGasLookup()</code></td>
+        <td><code>useGasLookup()</code></td>
         <td><code>https://wsebjfjyi4k2kfb4mbcrcjyrqa0nwifh.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch gas information related to Ethereum or a supported layer two</td>
     </tr>
     <tr>
         <td>Prices</td>
-        <td><code>useFetchERC20Price(contractAddress: string, currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
+        <td><code>useERC20Price(contractAddress: string, currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
         <td><code>https://vw5caqjd3yg2oyslxcyxkln2dy0nqgxz.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch pricing data of a particular ERC20 collection</td>
     </tr>
     <tr>
         <td>Prices</td>
-        <td><code>useFetchERC721Price(contractAddress: string, tokenID: string)</code></td>
+        <td><code>useERC721Price(contractAddress: string, tokenID: string)</code></td>
         <td><code>https://brjvjnlp35ln3solbquo6fiize0bnwje.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch pricing data of a particular ERC721 collection</td>
     </tr>
     <tr>
         <td>Prices</td>
-        <td><code>useFetchETHPrice(currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
+        <td><code>useETHPrice(currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
         <td><code>https://fl5mxvcm42g3n7wtodnxq52s2a0jeokj.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch Ethereum price data</td>
     </tr>
     <tr>
         <td>Prices</td>
-        <td><code>useFetchLayerTwoPrice(layerTwo: LayerTwoNetworks, currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
+        <td><code>useLayerTwoPrice(layerTwo: LayerTwoNetworks, currentPrice: boolean, duration: 2 | 14 | 30)</code></td>
         <td><code>https://jt7ds5ua6iix7cpa5ueg2ud2gi0joklo.lambda-url.us-east-1.on.aws/</code></td>
         <td>Fetch Layer Two price data</td>
     </tr>

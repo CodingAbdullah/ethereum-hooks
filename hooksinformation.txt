@@ -1,49 +1,49 @@
 List of the 30 React Hooks
 
 Prices
-useFetchETHPrice - [Current Price, Duration]
-useFetchERC20Price - [Contract Address, Current Price, Duration]
-useFetchERC721Price - [Contract Address, Token ID]
-useFetchLayerTwoPrice - [Layer Two Network, Current Price, Duration]
+useETHPrice - [Current Price, Duration]
+useERC20Price - [Contract Address, Current Price, Duration]
+useERC721Price - [Contract Address, Token ID]
+useLayerTwoPrice - [Layer Two Network, Current Price, Duration]
 
 -
 
 ERC20 Tokens
-useFetchERC20CollectionOwners - [Contract Address]
-useFetchERC20CollectionTopCoins - []
-useFetchERC20CollectionTransfers - [Contract Address]
-useFetchERC20Holdings - [Contract Address]
-useFetchERC20Transfers - [Contract Address]
+useERC20CollectionOwners - [Contract Address]
+useERC20CollectionTopCoins - []
+useERC20CollectionTransfers - [Contract Address]
+useERC20Holdings - [Contract Address]
+useERC20Transfers - [Contract Address]
 
 -
 
 ERC721 Tokens
-useFetchERC721CollectionAttributes - [Contract Address]
-useFetchERC721CollectionData - [Contract Address]
-useFetchERC721CollectionExtraData - [Contract Address]
-useFetchERC721CollectionFloorPrice - [Contract Address]
-useFetchERC721CollectionMarketCap - [Contract Address, Duration]
-useFetchERC721CollectionSales - [Contract Address]
-useFetchERC721CollectionTransfers - [Contract Address]
-useFetchERC721CollectionTrends - []
-useFetchERC721CollectionVolume - []
-useFetchERC721Holdings - [Wallet Address]
-useFetchERC721LookupData - [Contract Address, Token ID]
-useFetchERC721OpenseaData - [Contract Address, Token ID]
-useFetchERC721RarityData - [Contract Address, Token ID]
-useFetchERC721SalesData - [Contract Address, Token ID]
-useFetchERC721TransferLookupData - [Contract Address, Token ID]
-useFetchERC721Transfers - [Wallet Address]
+useERC721CollectionAttributes - [Contract Address]
+useERC721CollectionData - [Contract Address]
+useERC721CollectionExtraData - [Contract Address]
+useERC721CollectionFloorPrice - [Contract Address]
+useERC721CollectionMarketCap - [Contract Address, Duration]
+useERC721CollectionSales - [Contract Address]
+useERC721CollectionTransfers - [Contract Address]
+useERC721CollectionTrends - []
+useERC721CollectionVolume - []
+useERC721Holdings - [Wallet Address]
+useERC721LookupData - [Contract Address, Token ID]
+useERC721OpenseaData - [Contract Address, Token ID]
+useERC721RarityData - [Contract Address, Token ID]
+useERC721SalesData - [Contract Address, Token ID]
+useERC721TransferLookupData - [Contract Address, Token ID]
+useERC721TransfersData - [Wallet Address]
 
 -
 
 ENS
-useFetchAddressENSLookup - [Address]
-useFetchENSAddressLookup - [ENS Name]
-useFetchENSIDLookup - [ID]
-useFetchENSNameLookup - [ENS Name]
+useAddressENSLookup - [Address]
+useENSAddressLookup - [ENS Name]
+useENSIDLookup - [ID]
+useENSNameLookup - [ENS Name]
 
 -
 
 Gas
-useFetchGasLookup - []
+useGasLookup - []
